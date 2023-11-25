@@ -1,7 +1,11 @@
+<script setup>
+
+import MemoryGame from '../components/MemoryGame.vue';
+
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <MemoryGame />
 </template>
 
 <style>

@@ -68,9 +68,7 @@ function setupUser(user) {
 }
 
 // -- -- -- -- -- Routes  -- -- -- -- -- -- --  //
-app.get('/', (req, res) => {
-    res.sendStatus(200);
-});
+app.use(express.static('public'));
 
 app.get('/users', async (req, res) => {
     let users = await database.collection('users').find().toArray();
@@ -81,7 +79,7 @@ app.get('/users', async (req, res) => {
     res.json(users);
 });
 
-app.post('/users', express.json(), async (req, res) => {
+app.post('/api/users', express.json(), async (req, res) => {
     const { name, phone, email, password } = req.body;
     if (!validateUser(name, phone, email, password))
         return res.sendStatus(400);

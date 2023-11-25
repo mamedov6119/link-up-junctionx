@@ -1,85 +1,50 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-secondary d-block">
+    <div class="container-md d-block pt-2 border-bottom border-danger-subtle">
+      <h1>Link Up: Connect and Engage</h1>
+      <p>Building Connections, Fostering Engagement</p>
     </div>
-  </header>
+    <div class="container-md" data-bs-theme="dark">
+      <router-link class="navbar-brand" to="/">Home</router-link>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
+        <router-link class="nav-link" to="/about">About</router-link>
+        <router-link class="nav-link" to="/games">Games</router-link>
+        <div class="ms-auto">
+          <div class="nav-item dropdown">
+            <router-link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </router-link>
 
-  <RouterView />
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <router-link class="dropdown-item" to="/login">Login</router-link>
+              <router-link class="dropdown-item" to="/signup">Registration</router-link>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <RouterView class="container-md pt-5" />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+.layer1{
+  background-image:  url(@/assets/wave-haikei.svg);
+} 
 </style>
