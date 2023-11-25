@@ -5,14 +5,14 @@
                 Game</button>
         </div>
         <div v-else>
-            <div style="display: flex; justify-content: center; align-items: center; margin-top: -300px;" id="game"
-                @click="jump" :class="{ 'game-over': gameOver }">
+            <div style="display: flex; justify-content: center; align-items: center; " id="game" @click="jump"
+                :class="{ 'game-over': gameOver }">
                 <div class="bird" :style="{ top: `${birdTop}px` }"></div>
                 <div class="pipe" v-for="(pipe, index) in pipes" :key="index"
                     :style="{ left: `${pipe.left}px`, top: `${pipe.top}px`, height: `${pipe.height}px` }"></div>
 
             </div>
-            <div style="font-size: xx-large; margin-top: -500px;" v-if="gameOver">Game Over! Your score is: {{ points }}
+            <div style="font-size: xx-large; " v-if="gameOver">Game Over! Your score is: {{ points }}
             </div>
 
         </div>
