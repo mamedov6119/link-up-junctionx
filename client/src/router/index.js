@@ -35,6 +35,11 @@ const router = createRouter({
       name: 'memory',
       component: () => import('../views/MemoryGame.vue')
     },
+    {
+      path: '/games/quiz',
+      name: 'quiz',
+      component: () => import('../components/Quizzes.vue')
+    }
   ]
 })
 

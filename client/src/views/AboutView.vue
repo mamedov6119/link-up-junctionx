@@ -1,10 +1,12 @@
 <script setup>
 
 import Quizzes from '../components/Quizzes.vue';
+import FlappyBird from '../components/FlappyBird.vue';
 
 </script>
 
 <template>
+  <!-- <FlappyBird /> -->
   <Quizzes />
 </template>
 
