@@ -4,10 +4,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
-    <header>
-      <h1>Link Up: Connect and Engage</h1>
-      <p>Building Connections, Fostering Engagement</p>
-    </header>
+
 
     <section>
       <h2>Welcome to our Innovative Telecom Experience!</h2>
@@ -47,63 +44,3 @@ import TheWelcome from '../components/TheWelcome.vue'
 </template>
 
 
-<style>
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-  color: black;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
-
-section {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-h2 {
-  color: #333;
-}
-
-p {
-  color: #666;
-}
-
-button {
-  background-color: #4285f4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #2d76e8;
-}
-
-.signupbutton {
-  background-color: #4285f4;
-  color: #fff;
-  border: none;
-  margin-top: 20px !important;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  text-decoration: none;
-}
-</style>
