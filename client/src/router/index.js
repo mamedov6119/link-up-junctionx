@@ -38,12 +38,12 @@ const router = createRouter({
     {
       path: '/games/quiz',
       name: 'quiz',
-      component: () => import('../components/Quizzes.vue')
+      component: () => import('../views/QuizGame.vue')
     },
     {
       path: '/games/gappybird',
       name: 'gappybird',
-      component: () => import('../components/GappyBird.vue')
+      component: () => import('../views/BirdGame.vue')
     }
   ]
 })

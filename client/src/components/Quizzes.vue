@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2>Quizzes</h2>
         <div v-for="(question, index) in randomQuestions" :key="index" class="quiz-card">
             <h3>{{ question.question }}</h3>
             <ul>
@@ -16,7 +15,9 @@
                 </li>
             </ul>
         </div>
-        <button @click="submitQuiz" :disabled="quizSubmitted">Submit Quiz</button>
+        <div class="text-center">
+            <button @click="submitQuiz" class="btn btn-success w-50" :disabled="quizSubmitted">Submit Quiz</button>
+        </div>
         <div v-if="quizSubmitted" class="result">
             <p>
                 {{ correctCount === 3 ? 'Congratulations! All answers are correct.' : `You got ${correctCount} out of 3

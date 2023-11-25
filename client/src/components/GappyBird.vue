@@ -1,21 +1,26 @@
 <template>
-    <div>
-        <div v-if="!gameStarted">
-            <button style="display: flex; justify-content: center; align-items: center;" @click="startGame">Start
-                Game</button>
+    <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 500px; ">
+        <div v-if="!gameStarted" style="display: flex; justify-content: center; align-items: center; min-height: 500px; ">
+            <button class="btn btn-success" @click="startGame">Start Game</button>
         </div>
         <div v-else>
             <div style="display: flex; justify-content: center; align-items: center; " id="game" @click="jump"
                 :class="{ 'game-over': gameOver }">
-                <div class="bird" :style="{ top: `${birdTop}px` }"><img src="../assets/Gappy.png"
-                        style="width: 100%; height: 100%; "> </div>
+                <div class="bird" :style="{ top: `${birdTop}px` }">
+                    <img src="../assets/Gappy.png" style="width: 100%; height: 100%; ">
+                </div>
                 <div class="pipe" v-for="(pipe, index) in pipes" :key="index"
-                    :style="{ left: `${pipe.left}px`, top: `${pipe.top}px`, height: `${pipe.height}px` }"></div>
-
+                    :style="{ left: `${pipe.left}px`, top: `${pipe.top}px`, height: `${pipe.height}px` }">
+                </div>
             </div>
-            <div style="font-size: xx-large; " v-if="gameOver">Game Over! Your score is: {{ points }}
-            </div>
+            <div style="font-size: xx-large; text-align: center;" v-if="gameOver">
+                <p>Game Over! Your score is: {{ points }}</p>
 
+                <div v-if="points > 0">
+                    <p class="m-0">You can collect your reward here</p>
+                    <button class="btn btn-success">Collect ({{ points }} pts.)</button>
+                </div>
+            </div>
         </div>
     </div>
 </template>
