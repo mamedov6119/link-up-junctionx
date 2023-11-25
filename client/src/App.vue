@@ -1,5 +1,24 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
+<script>
+import { RouterLink, RouterView } from 'vue-router';
+import { ref, onMounted } from 'vue';
+
+export default {
+  components: {},
+  setup() {
+    const user = ref(null);
+    const getUser = async () => {
+      const res = await fetch('/api/profile');
+      if (res.ok) {
+        user.value = await res.json();
+      }
+    };
+    onMounted(getUser);
+    return {
+      user,
+      getUser
+    };
+  },
+};
 </script>
 
 <template>
@@ -22,7 +41,11 @@ import { RouterLink, RouterView } from 'vue-router'
               Account
             </router-link>
 
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <div v-if="user && user.email" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <router-link class="dropdown-item" to="/profile">Profile</router-link>
+              <router-link class="dropdown-item" to="/api/logout">Logout</router-link>
+            </div>
+            <div v-else class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <router-link class="dropdown-item" to="/login">Login</router-link>
               <router-link class="dropdown-item" to="/signup">Registration</router-link>
             </div>

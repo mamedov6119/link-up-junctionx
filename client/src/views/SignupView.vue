@@ -1,8 +1,7 @@
 <script setup>
-//get env variables
-const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+function registerUser(event) {
+    event.preventDefault();
 
-function registerUser() {
     const form = document.querySelector('form');
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
@@ -11,32 +10,28 @@ function registerUser() {
         return;
     }
 
-    fetch(`${SERVER_URL}/users`, {
+    fetch('/api/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
     })
-    .then((res) => res.json())
-    .then((data) => {
-        if (data.success) {
-            alert('Registration successful');
-            location.href = '/login';
+    .then((response) => {
+        console.log(response);
+        if (response.ok) {
+            alert('User created successfully');
+            window.location.href = '/login';
         } else {
-            alert(data.message);
+            alert('User creation failed');
         }
     })
-    .catch((err) => {
-        console.log(err);
-        alert('An error occurred');
-    });
 }
 </script>
 
 <template>
     <div>
-        <form class="card card-body" onSubmit="registerUser">
+        <form class="card card-body" :onSubmit="registerUser">
             <div class="mb-3">
                 <label for="name" class="form-label">
                     Full name<span class="text-danger">*</span>
