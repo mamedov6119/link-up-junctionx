@@ -35,6 +35,16 @@ const router = createRouter({
       name: 'memory',
       component: () => import('../views/MemoryGame.vue')
     },
+    {
+      path: '/games/quiz',
+      name: 'quiz',
+      component: () => import('../components/Quizzes.vue')
+    },
+    {
+      path: '/games/gappybird',
+      name: 'quiz',
+      component: () => import('../components/GappyBird.vue')
+    }
   ]
 })
 
