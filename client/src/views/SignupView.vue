@@ -23,6 +23,6 @@
                 required>
         </div>
         <button type="submit" class="btn btn-primary">Register</button>
+        <RouterLink to="/login">Login</RouterLink>
     </form>
-    <RouterLink to="/login">Login</RouterLink>
 </template>
