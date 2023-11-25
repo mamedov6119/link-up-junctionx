@@ -42,7 +42,7 @@ const router = createRouter({
     },
     {
       path: '/games/gappybird',
-      name: 'quiz',
+      name: 'gappybird',
       component: () => import('../components/GappyBird.vue')
     }
   ]
