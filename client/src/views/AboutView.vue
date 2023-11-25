@@ -1,11 +1,11 @@
 <script setup>
 
-import MemoryGame from '../components/MemoryGame.vue';
+import FlappyBird from '../components/FlappyBird.vue';
 
 </script>
 
 <template>
-  <MemoryGame />
+  <FlappyBird />
 </template>
 
 <style>
