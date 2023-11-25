@@ -7,7 +7,8 @@
         <div v-else>
             <div style="display: flex; justify-content: center; align-items: center; " id="game" @click="jump"
                 :class="{ 'game-over': gameOver }">
-                <div class="bird" :style="{ top: `${birdTop}px` }"></div>
+                <div class="bird" :style="{ top: `${birdTop}px` }"><img src="../assets/Gappy.png"
+                        style="width: 100%; height: 100%; "> </div>
                 <div class="pipe" v-for="(pipe, index) in pipes" :key="index"
                     :style="{ left: `${pipe.left}px`, top: `${pipe.top}px`, height: `${pipe.height}px` }"></div>
 
@@ -68,7 +69,7 @@ export default {
                     this.points++;
                 }
             });
-            if (this.birdTop >= 380 || this.birdTop <= 0) {
+            if (this.birdTop >= 390 || this.birdTop <= 0) {
                 this.gameOver = true;
                 this.endGame();
             }
@@ -100,14 +101,17 @@ export default {
     position: absolute;
     width: 20px;
     height: 20px;
-    background: red;
     left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pipe {
     position: absolute;
     width: 50px;
     background: green;
+
 }
 
 .game-over {
