@@ -32,6 +32,20 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
   </nav>
+  <div class="spacer layer1"></div>
   <RouterView class="container-md pt-5" />
 </template>
 
+<style scoped>
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer1{
+  background-image:  url(@/assets/wave-haikei.svg);
+} 
+</style>

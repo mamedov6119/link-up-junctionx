@@ -3,7 +3,9 @@ import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
+
   <main>
+    
     <section class="main container-md text-center">
       <h2>Welcome to our Innovative Telecom Experience!</h2>
       <p>Join us in creating a unique and engaging environment where young adults connect with telecom services in a fun
@@ -68,6 +70,19 @@ ul {
   list-style-type: square;
   text-align: left;
 }
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer1{
+  background-image: url(../assets/wave-haikei.svg);
+} 
+
 </style>
 
 
