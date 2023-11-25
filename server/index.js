@@ -1,5 +1,5 @@
 const express = require('express');
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 const cookieParser = require('cookie-parser');
 
 
@@ -70,12 +70,12 @@ function setupUser(user) {
 // -- -- -- -- -- Routes  -- -- -- -- -- -- --  //
 app.use(express.static('public'));
 
-app.get('/users', async (req, res) => {
+app.get('/api/users', async (req, res) => {
     let users = await database.collection('users').find().toArray();
-    users = users.map(user => {
-        delete user.password;
-        return user;
-    });
+    // users = users.map(user => {
+    //     delete user.password;
+    //     return user;
+    // });
     res.json(users);
 });
 
@@ -88,25 +88,27 @@ app.post('/api/users', express.json(), async (req, res) => {
     res.sendStatus(201);
 });
 
-app.get('/login', express.json(), async (req, res) => {
+app.post('/api/login', express.json(), async (req, res) => {
     const { email, password } = req.body;
     if (!validateLogin(email, password))
         return res.sendStatus(400);
+    console.log(email, password);
     const user = await database.collection('users').findOne({ email, password });
     if (!user) return res.sendStatus(401);
+    console.log(user);
     res.cookie('user_id', user._id.toString(), { expires: new Date(Date.now() + 900000) });
     res.sendStatus(200);
 });
 
-app.get('/logout', (req, res) => {
+app.get('/api/logout', (req, res) => {
     res.clearCookie('user_id');
     res.sendStatus(200);
 });
 
-app.get('/profile', async (req, res) => {
+app.get('/api/profile', async (req, res) => {
     const { user_id } = req.cookies;
     if (!user_id) return res.sendStatus(401);
-    const user = await database.collection('users').findOne({ _id: user_id });
+    const user = await database.collection('users').findOne({ _id: new ObjectId(user_id) });
     if (!user) return res.sendStatus(401);
     res.json(user);
 });
