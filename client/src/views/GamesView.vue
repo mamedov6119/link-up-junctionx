@@ -21,6 +21,7 @@ import MemoryGame from '../components/MemoryGame.vue';
       <GameInfo title="Quiz" rewards="15 points"
         desc="In this game, you will be presented with a series of questions. The aim is to answer all the questions correctly. Game ends when all questions are answered or when the time runs out."
         link="/games/quiz" />
+      <GameInfo title="GappyBird" rewards="15 points" desc="GappyBird" link="/games/gappybird" />
 
     </div>
 
