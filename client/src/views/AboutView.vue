@@ -6,6 +6,7 @@ import AboutPage from '@/components/AboutPage.vue';
   <AboutPage />
 </template>
 
+
 <style>
 @media (min-width: 1024px) {
   .about {

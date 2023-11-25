@@ -1,0 +1,604 @@
+{
+    "quizzes": [
+        {
+            "question": "What is the capital of France?",
+            "options": [
+                "Berlin",
+                "Madrid",
+                "Paris",
+                "Rome"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "options": [
+                "Mars",
+                "Venus",
+                "Jupiter",
+                "Saturn"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": [
+                "Charles Dickens",
+                "William Shakespeare",
+                "Jane Austen",
+                "Mark Twain"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the largest mammal in the world?",
+            "options": [
+                "Elephant",
+                "Blue Whale",
+                "Giraffe",
+                "Hippopotamus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "In which year did World War II end?",
+            "options": [
+                "1943",
+                "1945",
+                "1950",
+                "1939"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "options": [
+                "Vincent van Gogh",
+                "Leonardo da Vinci",
+                "Pablo Picasso",
+                "Claude Monet"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the largest ocean on Earth?",
+            "options": [
+                "Atlantic Ocean",
+                "Indian Ocean",
+                "Arctic Ocean",
+                "Pacific Ocean"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Which programming language is often used for web development?",
+            "options": [
+                "Java",
+                "Python",
+                "HTML",
+                "JavaScript"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "options": [
+                "J.K. Rowling",
+                "Harper Lee",
+                "George Orwell",
+                "F. Scott Fitzgerald"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the capital of Japan?",
+            "options": [
+                "Seoul",
+                "Beijing",
+                "Tokyo",
+                "Bangkok"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which element has the chemical symbol 'O'?",
+            "options": [
+                "Oxygen",
+                "Gold",
+                "Silver",
+                "Carbon"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who is known as the 'Father of Computer Science'?",
+            "options": [
+                "Bill Gates",
+                "Alan Turing",
+                "Steve Jobs",
+                "Ada Lovelace"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the capital of Australia?",
+            "options": [
+                "Sydney",
+                "Melbourne",
+                "Canberra",
+                "Perth"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "In which year did the Titanic sink?",
+            "options": [
+                "1912",
+                "1907",
+                "1920",
+                "1915"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who is the author of 'The Great Gatsby'?",
+            "options": [
+                "Ernest Hemingway",
+                "F. Scott Fitzgerald",
+                "J.D. Salinger",
+                "George Orwell"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which country is known as the 'Land of the Rising Sun'?",
+            "options": [
+                "China",
+                "Japan",
+                "South Korea",
+                "Vietnam"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the currency of Brazil?",
+            "options": [
+                "Peso",
+                "Euro",
+                "Real",
+                "Dollar"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Who discovered penicillin?",
+            "options": [
+                "Marie Curie",
+                "Alexander Fleming",
+                "Louis Pasteur",
+                "Jonas Salk"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the longest river in the world?",
+            "options": [
+                "Amazon River",
+                "Nile River",
+                "Yangtze River",
+                "Mississippi River"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which city hosted the 2016 Summer Olympics?",
+            "options": [
+                "Rio de Janeiro",
+                "Tokyo",
+                "London",
+                "Beijing"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What is the capital of Brazil?",
+            "options": [
+                "Brasília",
+                "Rio de Janeiro",
+                "São Paulo",
+                "Buenos Aires"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which famous scientist developed the theory of relativity?",
+            "options": [
+                "Isaac Newton",
+                "Albert Einstein",
+                "Galileo Galilei",
+                "Stephen Hawking"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "In which year did the United States declare independence?",
+            "options": [
+                "1776",
+                "1789",
+                "1801",
+                "1812"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What is the largest desert in the world?",
+            "options": [
+                "Sahara Desert",
+                "Antarctica",
+                "Arabian Desert",
+                "Gobi Desert"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Who wrote 'The Catcher in the Rye'?",
+            "options": [
+                "J.D. Salinger",
+                "Ernest Hemingway",
+                "F. Scott Fitzgerald",
+                "Harper Lee"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which gas do plants absorb during photosynthesis?",
+            "options": [
+                "Oxygen",
+                "Nitrogen",
+                "Carbon Dioxide",
+                "Hydrogen"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "What is the currency of Japan?",
+            "options": [
+                "Yen",
+                "Won",
+                "Ringgit",
+                "Baht"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who painted 'Starry Night'?",
+            "options": [
+                "Pablo Picasso",
+                "Vincent van Gogh",
+                "Claude Monet",
+                "Leonardo da Vinci"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which ocean is the largest on Earth?",
+            "options": [
+                "Atlantic Ocean",
+                "Indian Ocean",
+                "Arctic Ocean",
+                "Pacific Ocean"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "options": [
+                "Tomato",
+                "Avocado",
+                "Onion",
+                "Cilantro"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which country is known as the 'Land of the Midnight Sun'?",
+            "options": [
+                "Norway",
+                "Canada",
+                "Sweden",
+                "Finland"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "In which year did the first moon landing occur?",
+            "options": [
+                "1961",
+                "1969",
+                "1975",
+                "1983"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Who wrote '1984'?",
+            "options": [
+                "George Orwell",
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "J.K. Rowling"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What is the smallest prime number?",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which famous scientist developed the laws of motion?",
+            "options": [
+                "Galileo Galilei",
+                "Isaac Newton",
+                "Albert Einstein",
+                "Nikola Tesla"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the largest mountain in the world?",
+            "options": [
+                "Mount Everest",
+                "K2",
+                "Kangchenjunga",
+                "Makalu"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who is the author of 'The Hobbit'?",
+            "options": [
+                "J.R.R. Tolkien",
+                "C.S. Lewis",
+                "J.K. Rowling",
+                "George R.R. Martin"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which country is known as the 'Land of the Pharaohs'?",
+            "options": [
+                "Greece",
+                "Egypt",
+                "Italy",
+                "Turkey"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "options": [
+                "Au",
+                "Ag",
+                "Fe",
+                "Cu"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who played the character of Jack Dawson in the movie Titanic?",
+            "options": [
+                "Leonardo DiCaprio",
+                "Brad Pitt",
+                "Johnny Depp",
+                "Tom Cruise"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What is the capital of Brazil?",
+            "options": [
+                "Brasília",
+                "Rio de Janeiro",
+                "São Paulo",
+                "Buenos Aires"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which famous scientist developed the theory of relativity?",
+            "options": [
+                "Isaac Newton",
+                "Albert Einstein",
+                "Galileo Galilei",
+                "Stephen Hawking"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "In which year did the United States declare independence?",
+            "options": [
+                "1776",
+                "1789",
+                "1801",
+                "1812"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What is the largest desert in the world?",
+            "options": [
+                "Sahara Desert",
+                "Antarctica",
+                "Arabian Desert",
+                "Gobi Desert"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Who wrote 'The Catcher in the Rye'?",
+            "options": [
+                "J.D. Salinger",
+                "Ernest Hemingway",
+                "F. Scott Fitzgerald",
+                "Harper Lee"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which gas do plants absorb during photosynthesis?",
+            "options": [
+                "Oxygen",
+                "Nitrogen",
+                "Carbon Dioxide",
+                "Hydrogen"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "What is the currency of Japan?",
+            "options": [
+                "Yen",
+                "Won",
+                "Ringgit",
+                "Baht"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who painted 'Starry Night'?",
+            "options": [
+                "Pablo Picasso",
+                "Vincent van Gogh",
+                "Claude Monet",
+                "Leonardo da Vinci"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which ocean is the largest on Earth?",
+            "options": [
+                "Atlantic Ocean",
+                "Indian Ocean",
+                "Arctic Ocean",
+                "Pacific Ocean"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "options": [
+                "Tomato",
+                "Avocado",
+                "Onion",
+                "Cilantro"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which country is known as the 'Land of the Midnight Sun'?",
+            "options": [
+                "Norway",
+                "Canada",
+                "Sweden",
+                "Finland"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "In which year did the first moon landing occur?",
+            "options": [
+                "1961",
+                "1969",
+                "1975",
+                "1983"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Who wrote '1984'?",
+            "options": [
+                "George Orwell",
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "J.K. Rowling"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "What is the smallest prime number?",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which famous scientist developed the laws of motion?",
+            "options": [
+                "Galileo Galilei",
+                "Isaac Newton",
+                "Albert Einstein",
+                "Nikola Tesla"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the largest mountain in the world?",
+            "options": [
+                "Mount Everest",
+                "K2",
+                "Kangchenjunga",
+                "Makalu"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who is the author of 'The Hobbit'?",
+            "options": [
+                "J.R.R. Tolkien",
+                "C.S. Lewis",
+                "J.K. Rowling",
+                "George R.R. Martin"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which country is known as the 'Land of the Pharaohs'?",
+            "options": [
+                "Greece",
+                "Egypt",
+                "Italy",
+                "Turkey"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "options": [
+                "Au",
+                "Ag",
+                "Fe",
+                "Cu"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Who played the character of Jack Dawson in the movie Titanic?",
+            "options": [
+                "Leonardo DiCaprio",
+                "Brad Pitt",
+                "Johnny Depp",
+                "Tom Cruise"
+            ],
+            "answer": 0
+        }
+    ]
+}
