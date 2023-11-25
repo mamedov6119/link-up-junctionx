@@ -49,7 +49,7 @@ function loginUser(event) {
                 required>
             </div>
     
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button style="background-color: #77249E; border-color: blueviolet;" type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </template>

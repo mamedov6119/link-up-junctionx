@@ -100,7 +100,7 @@ function registerUser(event) {
                 Have an account? <RouterLink to="/login">Login</RouterLink>
             </p>
 
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button style="background-color: #77249E; border-color: blueviolet;" type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
 </template>

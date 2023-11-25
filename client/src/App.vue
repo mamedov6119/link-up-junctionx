@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-secondary d-block">
+  <nav class="navbar navbar-expand-lg d-block">
     <div class="container-md d-block pt-2 border-bottom border-danger-subtle">
       <h1>Link Up: Connect and Engage</h1>
       <p>Building Connections, Fostering Engagement</p>
@@ -59,15 +59,9 @@ export default {
 </template>
 
 <style scoped>
-.spacer{
-  aspect-ratio: 960/300;
-  width: 100% ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.navbar{
+  background-color: rgba(152,42,203,.2);
+  border-color: blueviolet;
+  color: black;
 }
-
-.layer1{
-  background-image:  url(@/assets/wave-haikei.svg);
-} 
 </style>
