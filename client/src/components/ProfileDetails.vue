@@ -22,10 +22,11 @@ export default {
 
 <template>
     <div v-if="user">
-        <h3>Phone *{{ user.phone.slice(-4) }}</h3>
+        <h3>Welcome, {{ user.name }}!</h3>
         <p>
-            Available money: {{ user.money }} Ft. <br>
-            Current packages: {{ user.packages.length }}
+            Phone number: *{{ user.phone.slice(0,4) }} <br>
+            Current points: {{ user.money }} <br>
+            Using packages: {{ user.packages.length }} <br>
         </p>
         <ul>
             <li v-for="p in user.packages.slice(0, 3)" :key="p.id">
