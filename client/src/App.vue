@@ -14,8 +14,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
-        <router-link class="nav-link" to="#">Features</router-link>
-        <router-link class="nav-link" to="#">Pricing</router-link>
+        <router-link class="nav-link" to="/about">About</router-link>
+        <router-link class="nav-link" to="/games">Games</router-link>
         <div class="ms-auto">
           <div class="nav-item dropdown">
             <router-link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,7 +32,6 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
   </nav>
-  <div class="spacer layer1"></div>
   <RouterView class="container-md pt-5" />
 </template>
 

@@ -30,16 +30,14 @@ function validateUser(name, phone, email, password) {
 
 
 // -- -- -- -- -- Routes  -- -- -- -- -- -- --  //
-app.get('/', (req, res) => {
-    res.sendStatus(200);
-});
+app.use(express.static('public'));
 
-app.get('/users', async (req, res) => {
+app.get('/api/users', async (req, res) => {
     const users = await database.collection('users').find().toArray();
     res.json(users);
 });
 
-app.post('/users', express.json(), async (req, res) => {
+app.post('/api/users', express.json(), async (req, res) => {
     const { name, phone, email, password } = req.body;
     if (!validateUser(name, phone, email, password)) {
         return res.sendStatus(400);

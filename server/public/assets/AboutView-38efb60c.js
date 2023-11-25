@@ -1,0 +1,1 @@
+import{M as e}from"./MemoryGame-187d78e1.js";import{o,c as t}from"./index-ecea8983.js";/* empty css                                                                   */const n={__name:"AboutView",setup(_){return(r,a)=>(o(),t(e))}};export{n as default};
