@@ -30,9 +30,16 @@ defineProps({
         <p class="card-text">
           {{ desc }}
         </p>
-        <router-link class="btn btn-primary px-5" :to="link">Play</router-link>
+        <router-link style="background-color: #77249E; border-color: blueviolet;" class="btn btn-primary px-5" :to="link">Play</router-link>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.card{
+  background-color: rgba(152,42,203,.2);
+}
+
+</style>
 
