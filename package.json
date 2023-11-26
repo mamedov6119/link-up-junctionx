@@ -7,7 +7,8 @@
     "install": "cd client && npm install && cd ../server && npm install && cd ..",
     "build": "cd client && npm run build && cd ..",
     "start": "cd server && npm start",
-    "qs": "npm run install && npm run build && npm run start"
+    "qs": "npm run install && npm run build && npm run start",
+    "heroku-prebuild": "cd client && npm install -g vite && cd .."
   },
   "repository": {
     "type": "git",
