@@ -1,5 +1,12 @@
 # Project
 
+## Usage
+```bash
+npm run install
+npm run build
+npm run start
+```
+
 ## Development
 ```bash
 cd client

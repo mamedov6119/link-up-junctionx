@@ -1,0 +1,21 @@
+{
+  "name": "link-up-junctionx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd client && npm install && cd ../server && npm install && cd ..",
+    "build": "cd client && npm run build && cd ..",
+    "start": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamedov6119/link-up-junctionx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamedov6119/link-up-junctionx/issues"
+  },
+  "homepage": "https://github.com/mamedov6119/link-up-junctionx#readme"
+}
