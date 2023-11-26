@@ -23,6 +23,7 @@
                 {{ correctCount === 3 ? 'Congratulations! All answers are correct.' : `You got ${correctCount} out of 3
                 questions correct.` }}
             </p>
+            <RewardsButton :amount="correctCount * 5" />
         </div>
     </div>
 </template>

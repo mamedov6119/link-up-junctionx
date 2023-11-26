@@ -95,7 +95,8 @@ shuffleCards();
         </div>
     </div>
     <div v-else>
-        <p>Congrats! You won {{ reward }} </p>
+        <p>Congrats! You have completed the game!</p>
+        <RewardsButton :amount=15 />
     </div>
 </template>
 

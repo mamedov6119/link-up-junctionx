@@ -15,18 +15,19 @@
             </div>
             <div style="font-size: xx-large; text-align: center;" v-if="gameOver">
                 <p>Game Over! Your score is: {{ points }}</p>
-
-                <div v-if="points > 0">
-                    <p class="m-0">You can collect your reward here</p>
-                    <button class="btn btn-success">Collect ({{ points }} pts.)</button>
-                </div>
+                <RewardsButton :amount="points" />
             </div>
         </div>
     </div>
 </template>
   
 <script>
+import RewardsButton from "./RewardsButton.vue";
+
 export default {
+    components: {
+        RewardsButton
+    },
     data() {
         return {
             birdTop: 200,

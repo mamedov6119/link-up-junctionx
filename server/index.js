@@ -113,6 +113,18 @@ app.get('/api/profile', async (req, res) => {
     res.json(user);
 });
 
+app.post('/api/operations', async (req, res) => {
+    const { user_id } = req.cookies;
+    if (!user_id) return res.sendStatus(401);
+    const user = await database.collection('users').findOne({ _id: new ObjectId(user_id) });
+    if (!user) return res.sendStatus(401);
+    const { amount } = req.body;
+    if (!amount) return res.sendStatus(400);
+    const newMoney = user.money + amount;
+    await database.collection('users').updateOne({ _id: new ObjectId(user_id) }, { $set: { money: newMoney } });
+    res.sendStatus(200);
+});
+
 app.listen(PORT, () => {
     console.log(`Server on port ${PORT}`);
 });

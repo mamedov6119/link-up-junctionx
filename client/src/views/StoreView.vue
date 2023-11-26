@@ -1,7 +1,10 @@
 <template>
     <div>
         <h2>Internet Package Store</h2>
-        <div class="internet-package" v-for="(pack, index) in internetPackages" :key="index">
+        <hr>
+        <ProfileDetails class="text-center" />
+        <hr>
+        <div class="card card-body mt-3" v-for="(pack, index) in internetPackages" :key="index">
             <h3>{{ pack.name }}</h3>
             <p>{{ pack.description }}</p>
             <p>Price: {{ pack.price }} Points</p>
@@ -12,6 +15,7 @@
   
 <script setup>
 import { ref } from 'vue';
+import ProfileDetails from '../components/ProfileDetails.vue';
 
 // Function to initialize the lastPurchaseTime property
 const initializePackages = () => {

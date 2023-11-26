@@ -2,6 +2,16 @@
 import { RouterLink, RouterView } from 'vue-router';
 import { ref, onMounted } from 'vue';
 
+function logout() {
+  console.log(1);
+  fetch('/api/logout', {
+    method: 'GET',
+  }).then(() => {
+    alert('You have been logged out.');
+    window.location.href = '/';
+  });
+}
+
 export default {
   components: {},
   setup() {
@@ -15,7 +25,8 @@ export default {
     onMounted(getUser);
     return {
       user,
-      getUser
+      getUser,
+      logout
     };
   },
 };
@@ -46,7 +57,7 @@ export default {
 
             <div v-if="user && user.email" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <router-link class="dropdown-item" to="/profile">Profile</router-link>
-              <router-link class="dropdown-item" to="/api/logout">Logout</router-link>
+              <button class="dropdown-item" @click="logout">Logout</button>
             </div>
             <div v-else class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <router-link class="dropdown-item" to="/login">Login</router-link>
