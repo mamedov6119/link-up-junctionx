@@ -2,9 +2,7 @@
 
 ## Usage
 ```bash
-npm run install
-npm run build
-npm run start
+npm run qs
 ```
 
 ## Development
