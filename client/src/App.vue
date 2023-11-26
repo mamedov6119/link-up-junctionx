@@ -35,7 +35,7 @@ export default {
 <template>
   <nav class="navbar navbar-expand-lg d-block">
     <div class="container-md d-block pt-2 border-bottom border-danger-subtle">
-      <h1>Link Up: Connect and Engage</h1>
+      <h1>LinkUp: Connect and Engage</h1>
       <p>Building Connections, Fostering Engagement</p>
     </div>
     <div class="container-md" data-bs-theme="dark">

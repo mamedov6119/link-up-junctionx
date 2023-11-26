@@ -31,6 +31,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import quizzes from './questions.json';
+import RewardsButton from './RewardsButton.vue';
 
 let data = JSON.parse(JSON.stringify(quizzes));
 

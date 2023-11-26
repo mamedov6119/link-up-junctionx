@@ -20,9 +20,9 @@ import ProfileDetails from '../components/ProfileDetails.vue';
 // Function to initialize the lastPurchaseTime property
 const initializePackages = () => {
     return [
-        { name: 'Basic Plan', description: 'Suitable for light usage', price: 50, lastPurchaseTime: 0 },
-        { name: 'Standard Plan', description: 'Ideal for regular usage', price: 100, lastPurchaseTime: 0 },
-        { name: 'Premium Plan', description: 'Unlimited high-speed internet', price: 200, lastPurchaseTime: 0 },
+        { name: 'Basic Plan', description: 'Suitable for light usage', price: 5, lastPurchaseTime: 0 },
+        { name: 'Standard Plan', description: 'Ideal for regular usage', price: 10, lastPurchaseTime: 0 },
+        { name: 'Premium Plan', description: 'Unlimited high-speed internet', price: 20, lastPurchaseTime: 0 },
     ];
 };
 
@@ -56,7 +56,7 @@ const buyPackage = (index) => {
 };
 
 // Sample user points (replace with actual user points)
-const userPoints = ref(300);
+const userPoints = ref(17);
 </script>
   
 <style scoped>
