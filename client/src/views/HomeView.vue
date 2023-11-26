@@ -3,9 +3,8 @@ import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-
   <main>
-    
+
     <section class="main container-md text-center">
       <h2>Welcome to our Innovative Telecom Experience!</h2>
       <p>Join us in creating a unique and engaging environment where young adults connect with telecom services in a fun
@@ -26,7 +25,7 @@ import TheWelcome from '../components/TheWelcome.vue'
             <li>Shape the future of telecom engagement</li>
           </ul>
         </section>
-    
+
         <section class="card card-body mt-4">
           <h2>How It Works</h2>
           <ul class="accent">
@@ -36,12 +35,12 @@ import TheWelcome from '../components/TheWelcome.vue'
             <li>Enjoy exclusive rewards and offers</li>
           </ul>
         </section>
-    
+
         <section class="card card-body mt-4">
           <h2>Get in Touch</h2>
           <p>Have questions or suggestions? Contact us!</p>
           <!-- mail to -->
-          <a href="mailto:test@gmail.com">test@gmail.com</a>
+          <a href="mailto:junction@t6n.email">junction@t6n.email</a>
         </section>
       </div>
     </div>
@@ -50,20 +49,20 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 
 <style scoped>
-
 section:not(.main) {
   border-radius: 5rem;
   padding: 2rem;
   color: black;
-  background-color: rgba(152,42,203,.2);
+  background-color: rgba(152, 42, 203, .2);
 }
 
-.accent{
-color: #77249E;
-font-size: 1.2rem;
+.accent {
+  color: #77249E;
+  font-size: 1.2rem;
 }
-.secondary{
-  color:  #982ACB;
+
+.secondary {
+  color: #982ACB;
 }
 
 ul {
@@ -71,18 +70,17 @@ ul {
   text-align: left;
 }
 
-.spacer{
+.spacer {
   aspect-ratio: 960/300;
-  width: 100% ;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.layer1{
+.layer1 {
   background-image: url(../assets/wave-haikei.svg);
-} 
-
+}
 </style>
 
 

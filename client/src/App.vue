@@ -29,15 +29,18 @@ export default {
     </div>
     <div class="container-md" data-bs-theme="dark">
       <router-link class="navbar-brand" to="/">Home</router-link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
         <router-link class="nav-link" to="/about">About</router-link>
         <router-link class="nav-link" to="/games">Games</router-link>
+        <router-link class="nav-link" to="/store">Store</router-link>
         <div class="ms-auto">
           <div class="nav-item dropdown">
-            <router-link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <router-link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </router-link>
 
@@ -59,8 +62,8 @@ export default {
 </template>
 
 <style scoped>
-.navbar{
-  background-color: rgba(152,42,203,.2);
+.navbar {
+  background-color: rgba(152, 42, 203, .2);
   border-color: blueviolet;
   color: black;
 }
